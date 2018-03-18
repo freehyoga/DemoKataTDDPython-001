@@ -34,4 +34,4 @@ class TestSecuenciaNumeros(TestCase):
 
 #Maximo
     def test_maximo_vacio(self):
-        self.assertEqual(SecuenciaNumeros().maximo(""), 0, "Minimo de una cadena vacia")
+        self.assertEqual(SecuenciaNumeros().maximo(""), 0, "Maximo de una cadena vacia")

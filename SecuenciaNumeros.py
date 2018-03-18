@@ -22,4 +22,5 @@ class SecuenciaNumeros:
             return int(cadena)
 
     def maximo(self,cadena):
-            pass
+        if cadena == "":
+            return 0
