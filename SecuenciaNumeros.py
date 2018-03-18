@@ -20,3 +20,6 @@ class SecuenciaNumeros:
             return min(minimo)
         else:
             return int(cadena)
+
+    def maximo(self,cadena):
+            pass
