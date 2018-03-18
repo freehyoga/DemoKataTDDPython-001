@@ -24,5 +24,8 @@ class SecuenciaNumeros:
     def maximo(self,cadena):
         if cadena == "":
             return 0
+        elif "," in cadena:
+            maximo_arreglo = map(int, cadena.split(","))
+            return max(maximo_arreglo)
         else:
             return int(cadena)
