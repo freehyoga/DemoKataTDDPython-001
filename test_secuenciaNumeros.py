@@ -30,4 +30,4 @@ class TestSecuenciaNumeros(TestCase):
         self.assertEqual(SecuenciaNumeros().minimo("12,2"), 2, "Minimo de dos numeros")
 
     def test_minimo_n(self):
-        self.assertEqual(SecuenciaNumeros().minimo("10,5,128,3,12"), 3, "Minimo de tres numeros")
+        self.assertEqual(SecuenciaNumeros().minimo("10,5,128,3,12"), 3, "Minimo de tres numeros.")
