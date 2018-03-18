@@ -2,7 +2,7 @@ from unittest import TestCase
 
 __author__ = 'af.carrion'
 
-import SecuenciaNumeros
+from SecuenciaNumeros import SecuenciaNumeros
 
 class TestSecuenciaNumeros(TestCase):
 
