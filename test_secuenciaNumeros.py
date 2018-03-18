@@ -1,12 +1,11 @@
 from unittest import TestCase
+from SecuenciaNumeros import SecuenciaNumeros
 
 __author__ = 'af.carrion, se.perezf'
 
-from SecuenciaNumeros import SecuenciaNumeros
-
 class TestSecuenciaNumeros(TestCase):
 
-#Longitud
+    #Longitud
     def test_longitud(self):
         self.assertEqual(SecuenciaNumeros().longitud(""),0,"Cadena Vacia")
 
@@ -19,7 +18,7 @@ class TestSecuenciaNumeros(TestCase):
     def test_longitud_n(self):
         self.assertEqual(SecuenciaNumeros().longitud("1,5,3,8"),4, "Cuatro Numeros.")
 
-#Minimo
+    #Minimo
     def test_minimo_vacio(self):
         self.assertEqual(SecuenciaNumeros().minimo(""),0,"Minimo de una cadena vacia")
 
@@ -32,11 +31,14 @@ class TestSecuenciaNumeros(TestCase):
     def test_minimo_n(self):
         self.assertEqual(SecuenciaNumeros().minimo("10,5,128,3,12"), 3, "Minimo de tres numeros.")
 
-#Maximo
+    #Maximo
     def test_maximo_vacio(self):
         self.assertEqual(SecuenciaNumeros().maximo(""), 0, "Maximo de una cadena vacia")
 
     def test_maximo_uno(self):
         self.assertEqual(SecuenciaNumeros().maximo("7"), 7, "Maximo de un numero")
+
+    def test_maximo_dos(self):
+        self.assertEqual(SecuenciaNumeros().maximo("1, 2"), 2, "Maximo de dos numeros")
 
 
