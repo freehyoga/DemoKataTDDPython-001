@@ -13,5 +13,10 @@ class SecuenciaNumeros:
     def minimo(self, cadena):
         if cadena == "":
             return 0
+        elif "," in cadena:
+            #funtion map: es equivalente a for x in cadena
+            minimo = map(int, cadena.split(","))
+            #function min It returns the smallest item in an iterable or the smallest of two or more arguments.
+            return min(minimo)
         else:
             return int(cadena)
