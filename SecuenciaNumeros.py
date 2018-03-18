@@ -11,4 +11,4 @@ class SecuenciaNumeros:
             return int(cadena)
 
     def minimo(self, cadena):
-        pass
+        return 0
