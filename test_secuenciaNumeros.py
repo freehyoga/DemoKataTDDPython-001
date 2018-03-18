@@ -6,6 +6,7 @@ from SecuenciaNumeros import SecuenciaNumeros
 
 class TestSecuenciaNumeros(TestCase):
 
+#Longitud
     def test_longitud(self):
         self.assertEqual(SecuenciaNumeros().longitud(""),0,"Cadena Vacia")
 
@@ -17,3 +18,7 @@ class TestSecuenciaNumeros(TestCase):
 
     def test_longitud_n(self):
         self.assertEqual(SecuenciaNumeros().longitud("1,5,3,8"),4, "Cuatro Numeros.")
+
+#Minimo
+    def test_minimo_vacio(self):
+        self.assertEqual(SecuenciaNumeros().minimo(""),0,"Minimo de una cadena vacia")

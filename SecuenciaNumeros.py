@@ -9,3 +9,6 @@ class SecuenciaNumeros:
             return len(cadena.split(","))
         else:
             return int(cadena)
+
+    def minimo(self, cadena):
+        pass
