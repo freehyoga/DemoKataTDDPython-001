@@ -39,6 +39,9 @@ class TestSecuenciaNumeros(TestCase):
         self.assertEqual(SecuenciaNumeros().maximo("7"), 7, "Maximo de un numero")
 
     def test_maximo_dos(self):
-        self.assertEqual(SecuenciaNumeros().maximo("1, 2"), 2, "Maximo de dos numeros")
+        self.assertEqual(SecuenciaNumeros().maximo("1,2"), 2, "Maximo de dos numeros")
+
+    def test_maximo_n(self):
+        self.assertEqual(SecuenciaNumeros().maximo("1,2,3,24,4,24,4,354,24,5"), 354, "Maximo n numeros")
 
 
