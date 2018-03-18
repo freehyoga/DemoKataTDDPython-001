@@ -44,4 +44,8 @@ class TestSecuenciaNumeros(TestCase):
     def test_maximo_n(self):
         self.assertEqual(SecuenciaNumeros().maximo("1,2,3,24,4,24,4,354,24,5"), 354, "Maximo n numeros")
 
+    #Promedio
+    def test_promedio_vacio(self):
+        self.assertEqual(SecuenciaNumeros().promedio(""), 0, "Promedio Cadena Vacia")
+
 

@@ -29,3 +29,6 @@ class SecuenciaNumeros:
             return max(maximo_arreglo)
         else:
             return int(cadena)
+
+    def promedio(self, cadena):
+        return
