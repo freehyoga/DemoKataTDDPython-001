@@ -25,3 +25,6 @@ class TestSecuenciaNumeros(TestCase):
 
     def test_minimo_uno(self):
         self.assertEqual(SecuenciaNumeros().minimo("7"),7, "Minimo de un numero")
+
+    def test_minimo_dos(self):
+        self.assertEqual(SecuenciaNumeros().minimo("12,2"), 2, "Minimo de dos numeros")
