@@ -22,3 +22,6 @@ class TestSecuenciaNumeros(TestCase):
 #Minimo
     def test_minimo_vacio(self):
         self.assertEqual(SecuenciaNumeros().minimo(""),0,"Minimo de una cadena vacia")
+
+    def test_minimo_uno(self):
+        self.assertEqual(SecuenciaNumeros().minimo("7"),7, "Minimo de un numero")
