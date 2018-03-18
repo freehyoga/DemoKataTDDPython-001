@@ -14,3 +14,6 @@ class TestSecuenciaNumeros(TestCase):
 
     def test_longitud_dos(self):
         self.assertEqual(SecuenciaNumeros().longitud("1,2"),2, "Dos Numeros")
+
+    def test_longitud_n(self):
+        self.assertEqual(SecuenciaNumeros().longitud("1,5,3,8"),4, "Cuatro Numeros.")

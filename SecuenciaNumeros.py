@@ -8,4 +8,4 @@ class SecuenciaNumeros:
         elif "," in cadena:
             return len(cadena.split(","))
         else:
-            return 1
+            return int(cadena)
