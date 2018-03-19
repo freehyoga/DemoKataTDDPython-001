@@ -54,4 +54,7 @@ class TestSecuenciaNumeros(TestCase):
     def test_promedio_dos(self):
         self.assertEqual(SecuenciaNumeros().promedio("1, 3"), 2, "Promedio Cadena de dos numeros")
 
+    def test_promedio_n(self):
+        self.assertEqual(SecuenciaNumeros().promedio("1,2,3,4,5,6"), 3.5, "Promedio Cadena de n numeros")
+
 
