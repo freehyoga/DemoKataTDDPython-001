@@ -33,5 +33,8 @@ class SecuenciaNumeros:
     def promedio(self, cadena):
         if cadena == "":
             return 0
+        elif "," in cadena:
+            promedio_arreglo = map(int, cadena.split(","))
+            return (promedio_arreglo[0] + promedio_arreglo[1])/2
         else:
              return int(cadena)
