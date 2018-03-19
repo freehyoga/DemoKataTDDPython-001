@@ -64,4 +64,7 @@ class TestSecuenciaNumeros(TestCase):
     def test_analisis_uno(self):
         self.assertEqual(SecuenciaNumeros().analizar("3"), [1,3,3,3], "Analisis n numeros")
 
+    def test_analisis_dos(self):
+        self.assertEqual(SecuenciaNumeros().analizar("3, 4"), [2,3,4,3.5], "Analisis n numeros")
+
 
