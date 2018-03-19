@@ -35,6 +35,6 @@ class SecuenciaNumeros:
             return 0
         elif "," in cadena:
             promedio_arreglo = map(int, cadena.split(","))
-            return (promedio_arreglo[0] + promedio_arreglo[1])/2
+            return sum(promedio_arreglo)/float(len(promedio_arreglo))
         else:
              return int(cadena)
