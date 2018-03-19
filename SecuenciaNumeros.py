@@ -8,7 +8,7 @@ class SecuenciaNumeros:
         elif "," in cadena:
             return len(cadena.split(","))
         else:
-            return int(cadena)
+            return 1
 
     def minimo(self, cadena):
         if cadena == "":
