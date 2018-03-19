@@ -37,4 +37,7 @@ class SecuenciaNumeros:
             promedio_arreglo = map(int, cadena.split(","))
             return sum(promedio_arreglo)/float(len(promedio_arreglo))
         else:
-             return int(cadena)
+            return int(cadena)
+
+    def analizar(self, cadena):
+        return [self.longitud(cadena), self.minimo(cadena), self.maximo(cadena), self.promedio(cadena)]
